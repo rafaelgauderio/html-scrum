@@ -9,7 +9,7 @@
 		
 		html {
 			font-family: "Comic Sans MS", "Arial";			
-			background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);                       
+			background-color: #5CA47A;                       
 		}
 
         #links {
@@ -41,14 +41,32 @@
             color:white;
 		}
 
+		ul li ul li:hover {
+			transform: scale(1);
+            background-image: #5CA47A; 
+		}
+
+		ul > li > ul > li:hover {
+		   transform: scale(1);
+           background-image: #5CA47A; 
+		}
+
+		ol li:hover {
+			transform: scale(1.1);
+            background-color: #25335D; 
+			margin-left:25px;
+            color:white;
+		}
+
 		ul li li:hover {
 			transform: scale(1);
-            background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D); 
+			background-color: #5CA47A;  
+            
 		}
 
 		ul li li li:hover {
 			transform: scale(1);
-			background-color: #25335D;  
+			background-color: #5CA47A;  
             
 		}
        
@@ -114,8 +132,7 @@
 		<li>INSPEÇÃO: Artefatos do scrum e progresso em direção aos objetivos precisam ser inspecionados de maneira
 			frequente e diligente. Detectar problemas indesejados. Inspeção possibilita a adaptação.</li>
 		<li>ADAPTAÇÃO: Produto resultante é inaceitável. Se processos desviam do aceitável o processo devem ser 
-			ajustados. Difícil se as pessoas não estão empoderadas ou se alto gerenciando.
-</li>
+			ajustados. Difícil se as pessoas não estão empoderadas ou se alto gerenciando.</li>
 	</ul>
 	<h3>VALORES</h3>
 	<ol>
@@ -146,6 +163,11 @@
 						<li>Criar e ordenar os itens do backlog do produto.</li>
 						<li>Garantir a transparência e compreensão do backlog</li>
 						<li>Responsável pelo resultado final.</li>
+						<li>PO não deve sumir após a sprint planinge só reaparecer na sprint review.</li>
+						<li>PO não ser vago e enigmático.</li>
+						<li>Deixar o time ser autogerenciável</li>
+						<li>Delegar algumas de suas atribuições ao time de desenvolvimento</li>
+
 					</ul>
 				</li>
 				<li>Scrum Master
@@ -166,8 +188,9 @@
 		<li>Sprint é um container para todos os demais eventos.</li>
 		<li>Todo evento é uma oportunidade para inspecionar e adaptar artefatos.</li>
 		<li>Eventos são criados para criar regularidade e minimizar a necessidade de reuniões.</li>
-		<li>SPRINT
-			<ul>
+	</ul>
+	<h3>SPRINT</h3>
+		<ul>
 				<li>Onde ideias são transformadas em valores. Duranção de 1 mês ou menos.</li>
 				<li>Não fazer mudanças durante a sprint que coloquem os objetivos em risco.</li>
 				<li>Sprints curtas: mais ciclos de aprendizado, limitar o custo, risco e o tempo.</li>
@@ -179,12 +202,12 @@
 						<li>Plano é criado através de um trabalho colaborativo de todo o time.</li>
 						<li>Time scrum pode convidar outras pessoas para participarem do planejamento da Sprint.</li>
 						<li>TÓPICOS DA SPRINT
-							<uL>
+							<ul>
 								<li>Porque essa Sprint é valiosa? O objetivo da sprint deve ser concluido antes do final do planejamento da mesma.</li>
 								<li>O que pode ficar pronto nessa sprint?</li>
 								<li>Como o trabalho selecionado ficará pronto? Decompor os itens do backlog do produto em itens de trabalhos menores.<br>
 									Decisão exclusivo dos desenvolvedores de como transformar os itens do backlog em incrementos de valor. </li>
-							</uL>
+							</ul>
 						</li>
 						<li>BACKLOG DA SPRINT
 							<ul>
@@ -212,13 +235,10 @@
 								<li>Timebox de 3 horas para sprint de 1 mês.</li>								
 							</ul>
 						</li>
-					</ul>
-				</li>
-			</ul>
-		</li>			
-	</ul>	
+					</ul>			
+		</ul>	
 	<h3>ARTEFATOS</h3>
-	<ul>
+<ul>
 	<li>Representam um trabalho ou valor.</li>
 	<li>Objetivo de aumentar a transparência de informações chaves.</li>	
 	<li>Cada artefato possui um compromisso.</li>
@@ -248,7 +268,6 @@
 			<li>Compromisso: definição de pronto que é uma descrição formal do estado de um incremento no momento que ele atinge os requisitos de qualidade para um produto. Criar transparência para todos ao informar qual trabalho foi completado. </li>
 			<li>Desenvolvedores devem seguir a definição de pronto estabelecida.</li>
 		</ul>
-
 	</li>
 </ul>
 
